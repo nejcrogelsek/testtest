@@ -1,10 +1,44 @@
 import { FC } from 'react'
+import { Grid, Row, Col } from 'styles'
+import { Styled, Table } from './styles'
 
 const TestFive: FC = () => {
   return (
-    <div className="test-five">
-      <h1>TestFive</h1>
-    </div>
+    <Styled>
+      <h1>TEST 5 - Styling</h1>
+
+      <h2>With Grid</h2>
+
+      <Grid className="grid">
+        <Row>
+          <Col size={1}>upper left box</Col>
+          <Col size={1}>upper middle box</Col>
+          <Col size={1}>upper right box</Col>
+        </Row>
+        <Row>
+          <Col size={1}>bottom left box</Col>
+          <Col size={1}>bottom middle box</Col>
+          <Col size={1}>bottom right box</Col>
+        </Row>
+      </Grid>
+
+      <h2>With Table</h2>
+
+      <Table>
+        <tbody>
+          <tr>
+            <td>upper left box</td>
+            <td>upper middle box</td>
+            <td>upper right box</td>
+          </tr>
+          <tr>
+            <td>bottom left box</td>
+            <td>bottom middle box</td>
+            <td>bottom right box</td>
+          </tr>
+        </tbody>
+      </Table>
+    </Styled>
   )
 }
 
