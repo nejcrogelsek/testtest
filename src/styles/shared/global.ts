@@ -5,12 +5,6 @@ export interface GlobalProps {
 }
 
 export default createGlobalStyle<GlobalProps>`
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     #root{
         margin: 0;
         padding: 0;
@@ -23,6 +17,7 @@ export default createGlobalStyle<GlobalProps>`
 		color: #000000;
 		margin: 0;
 		padding: 0;
+        box-sizing: border-box;
     }
 
     img{
