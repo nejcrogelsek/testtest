@@ -24,10 +24,8 @@ const TestSeven: FC = () => {
     }))
   }
 
-  renders.current++
-
   useEffect(() => {
-    console.log('okej')
+    renders.current++
   }, [])
 
   return (
