@@ -1,16 +1,5 @@
+import { Category, Sport } from 'models/Sports'
 import { FC, useEffect, useState } from 'react'
-
-interface Category {
-  id: number
-  name: string
-  sports: Sport[]
-}
-
-interface Sport {
-  id: number
-  name: string
-  category: number
-}
 
 const categories = [
   { id: 0, name: 'Set sports' },
