@@ -19,11 +19,16 @@ const TestSeven: FC = () => {
   }, [])
 
   const addOneHandler = () => {
-    counterObject.value++
-    setCounterObject(counterObject)
+    setCounterObject((prevState) => ({
+      value: prevState.value + 1,
+    }))
   }
 
   renders.current++
+
+  useEffect(() => {
+    console.log('okej')
+  }, [])
 
   return (
     <Container>
