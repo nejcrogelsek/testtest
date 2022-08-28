@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Grid, Row, Col } from 'styles'
-import { Styled, Table } from './styles'
+import { GridContainer, Styled, Table } from './styles'
 
 const TestFive: FC = () => {
   return (
@@ -8,6 +8,17 @@ const TestFive: FC = () => {
       <h1>TEST 5 - Styling</h1>
 
       <h2>With Grid</h2>
+
+      <GridContainer>
+        <div className="item1">upper left box</div>
+        <div className="item2">upper middle box</div>
+        <div className="item3">upper right box</div>
+        <div className="item4">bottom left box</div>
+        <div className="item5">bottom middle box</div>
+        <div className="item6">bottom right box</div>
+      </GridContainer>
+
+      <h2>With Flex</h2>
 
       <Grid className="grid">
         <Row>
